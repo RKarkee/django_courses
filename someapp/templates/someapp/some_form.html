@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block body %}
+
+<form action="http://localhost:8000/someapp/addcomment/" method="post">
+{% csrf_token %}
+
+<input type="text" name="username">
+<input type="text" name="content">
+<input type="submit">
+
+</form>
+
+{% endblock %}

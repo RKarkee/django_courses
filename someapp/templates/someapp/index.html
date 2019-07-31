@@ -1,0 +1,15 @@
+{% extends 'main.html' %}
+{% block title %}
+    Index
+{% endblock %}
+
+{% block body %}
+<h1>Hello Welcome to my profile</h1>
+<p>Hello {{ name }}</p>
+<ul>
+{% for skill in skills %}
+<li>{{ skill }}</li>
+{% endfor %}
+
+</ul>
+{% endblock %}
